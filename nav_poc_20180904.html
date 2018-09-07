@@ -1,0 +1,202 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Navigation POC</title>
+<link href="styles.css" rel="stylesheet" type="text/css">
+<script src="scripts.js"></script>
+</head>
+<body>
+<div id="dropdown_wrapper">
+  <div onMouseOver="reHover()" id="re_content">
+  	  <h3>Reports</h3>
+  	  <button id="closeBtn"><i class="eagleIcon">&#xe810;</i></button>
+	  <div id="tabs">
+			<button class="tabBtnFocus" id="favoriteBtn" onclick="favoriteClick()" value="favorites">Recently Run</button>
+				&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+			<button class="tabBtn" onclick="recentClick()" value="recent">Most Run</button>
+				&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+			<button class="tabBtn" onclick="recentClick()" value="recent">Performance Reports</button>
+				&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+			<button class="tabBtn" onclick="recentClick()" value="recent">Risk Reports</button>
+				&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+			<button class="tabBtn" onclick="recentClick()" value="recent">AUM Reports</button>
+ 	  </div>	
+  	  <table>
+		  <tr>
+			<th style="padding-left: 0px">Name</th>
+			<th>Type</th>
+			<th>Details</th>
+			<th class="lastColumn">Last Viewed</th>
+		  </tr>
+		  <tr>
+			<td class="firstColumn">Global Equity Perfomanc…</td>
+			<td>Custom</td>
+			<td>As of Prior Day, Fund Details, 1 Month, 3 Month, Since Inception, Q…</td>
+			<td class="lastColumn">08/30/2018</td>
+		  </tr>
+		  <tr>
+			<td class="firstColumn">Performamce Overview</td>
+			<td>Assets Under Management</td>
+			<td>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do…</td>
+			<td class="lastColumn">08/30/2018</td>
+		  </tr>
+		  <tr>
+			<td class="firstColumn">Institutional Performanc…</td>
+			<td>Custom</td>
+			<td>Tempor incididunt ut labore et dolore magna aliqua</td>
+			<td class="lastColumn">08/29/2018</td>
+		  </tr>
+		  <tr>
+			<td class="firstColumn">AUM Overview</td>
+			<td>Assets Under Management</td>
+			<td>As of Prior Day, Assets Under Mgmt, Market Value, # of Funds, Fir…</td>
+			<td class="lastColumn">08/29/2018</td>
+		  </tr>
+		  <tr>
+			<td class="firstColumn">Holdings Overview</td>
+			<td>Positions</td>
+			<td>As of Prior Day, Market Value, Assets Under Management, # of F…</td>
+			<td class="lastColumn">08/28/2018</td>
+		  </tr>
+		  <tr>
+			<td class="firstColumn">Performance vs. Risk</td>
+			<td>Performance & Risk</td>
+			<td>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do…</td>
+			<td class="lastColumn">08/28/2018</td>
+		  </tr>
+		  <tr>
+			<td class="firstColumn">Risk Analysis</td>
+			<td>Performance & Risk</td>
+			<td>Tempor incididunt ut labore et dolore magna aliqua</td>
+			<td class="lastColumn">08/27/2018</td>
+		  </tr>
+		  <tr>
+			<td class="firstColumn">Portfolio Risk Attribution</td>
+			<td>Custom</td>
+			<td>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do…</td>
+			<td class="lastColumn">08/27/2018</td>
+		  </tr>
+		  <tr>
+			<td class="firstColumn">Portfolio Performance</td>
+			<td>Custom</td>
+			<td>Tempor incididunt ut labore et dolore magna aliqua</td>
+			<td class="lastColumn">08/26/2018</td>
+		  </tr>
+		  <tr>
+			<td class="firstColumn">Peer Comparison</td>
+			<td>Performance & Risk</td>
+			<td>Rolling 1 Year, Fund Details, Fund Ranking Among Peers</td>
+			<td class="lastColumn">08/26/2018</td>
+		  </tr>
+	</table>
+	<button id=showAllBtn><em class="eagleIcon" style="font-size: 16px;">&#xe81b;</em>Show All</button>
+  </div>
+  <div onMouseOver="acHover()" id="ac_content"><img  src="images/ac_dropdown.png" width="1280" height="570" alt=""/></div>
+  <div onMouseOver="icHover()" id="ic_content">
+  	<h3>Dashboards</h3>
+  	  <button id="closeBtn"><i class="eagleIcon">&#xe810;</i></button>
+	  <div id="tabs">
+			<button class="tabBtnFocus" id="favoriteBtn" onclick="favoriteClick()" value="favorites">Favorites</button>
+				&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+			<button class="tabBtn" onclick="recentClick()" value="recent">Recent</button>
+ 	  </div>	
+  	  <table>
+		  <tr>
+			<th style="padding-left: 0px">Name</th>
+			<th>Type</th>
+			<th>Details</th>
+			<th class="lastColumn">Last Viewed</th>
+		  </tr>
+		  <tr>
+			<td class="firstColumn">Global Equity Perfomanc…</td>
+			<td>Custom</td>
+			<td>As of Prior Day, Fund Details, 1 Month, 3 Month, Since Inception, Q…</td>
+			<td class="lastColumn">08/30/2018</td>
+		  </tr>
+		  <tr>
+			<td class="firstColumn">Performamce Overview</td>
+			<td>Assets Under Management</td>
+			<td>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do…</td>
+			<td class="lastColumn">08/30/2018</td>
+		  </tr>
+		  <tr>
+			<td class="firstColumn">Institutional Performanc…</td>
+			<td>Custom</td>
+			<td>Tempor incididunt ut labore et dolore magna aliqua</td>
+			<td class="lastColumn">08/29/2018</td>
+		  </tr>
+		  <tr>
+			<td class="firstColumn">AUM Overview</td>
+			<td>Assets Under Management</td>
+			<td>As of Prior Day, Assets Under Mgmt, Market Value, # of Funds, Fir…</td>
+			<td class="lastColumn">08/29/2018</td>
+		  </tr>
+		  <tr>
+			<td class="firstColumn">Holdings Overview</td>
+			<td>Positions</td>
+			<td>As of Prior Day, Market Value, Assets Under Management, # of F…</td>
+			<td class="lastColumn">08/28/2018</td>
+		  </tr>
+		  <tr>
+			<td class="firstColumn">Performance vs. Risk</td>
+			<td>Performance & Risk</td>
+			<td>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do…</td>
+			<td class="lastColumn">08/28/2018</td>
+		  </tr>
+		  <tr>
+			<td class="firstColumn">Risk Analysis</td>
+			<td>Performance & Risk</td>
+			<td>Tempor incididunt ut labore et dolore magna aliqua</td>
+			<td class="lastColumn">08/27/2018</td>
+		  </tr>
+		  <tr>
+			<td class="firstColumn">Portfolio Risk Attribution</td>
+			<td>Custom</td>
+			<td>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do…</td>
+			<td class="lastColumn">08/27/2018</td>
+		  </tr>
+		  <tr>
+			<td class="firstColumn">Portfolio Performance</td>
+			<td>Custom</td>
+			<td>Tempor incididunt ut labore et dolore magna aliqua</td>
+			<td class="lastColumn">08/26/2018</td>
+		  </tr>
+		  <tr>
+			<td class="firstColumn">Peer Comparison</td>
+			<td>Performance & Risk</td>
+			<td>Rolling 1 Year, Fund Details, Fund Ranking Among Peers</td>
+			<td class="lastColumn">08/26/2018</td>
+		  </tr>
+	</table>
+	<button id=showAllBtn><em class="eagleIcon" style="font-size: 16px;">&#xe81b;</em>Show All</button>
+  </div>
+</div>
+<div id="nav">
+  <button  onmouseover="icHover()" id="logoBtn"><img src="images/logo.png" width="26" height="22" alt=""/></button>	
+  <div onclick="icClick()" onmouseover="icHover()" onmouseout="icOut()" id="ic_button">
+    <p id="ic_text">INFORMATION CONSUMPTION</p>
+    <div id="ic_bleed"></div>
+  </div>
+  <div onclick="reClick()" onmouseover="reHover()" onmouseout="reOut()" id="re_button">
+    <p id="re_text">RE</p>
+    <p id="reports_text">REPORTING</p>
+    <div id="re_bleed"></div>
+  </div>
+  <div onclick="acClick()" onmouseover="acHover()" onmouseout="acOut()" id="ac_button">
+    <p id="ac_text">AC</p>
+    <p id="accounting_text">ACCOUNTING</p>
+    <div id="ac_bleed"></div>
+  </div>
+  <div onmouseover="icHover()" onmouseout="icOut()" id="nav_right"> </div>
+  <button  onmouseover="icHover()" id="logoutBtn">Log Out<img id="lockIcon" src="images/lock.png" width="12" height="15" alt=""/></button>
+</div>
+</div>
+<div onmouseover="queryHover()" onmouseout="queryOut()" id="query"> </div>
+<div class="dropdown"  onmouseover="icHover()" onmouseout="icOut()" id="ic_dropdown"></div>
+<div class="dropdown" onmouseover="acHover()" onmouseout="acOut()" id="ac_dropdown"></div>
+<div class="dropdown" onmouseover="reHover()" onmouseout="reOut()" id="re_dropdown"></div>
+</div>
+<img id="img_background" onmouseover="bgHover()" src="images/aum_background.png" width="1280" height="900" alt=""/>
+</body>
+</html>
