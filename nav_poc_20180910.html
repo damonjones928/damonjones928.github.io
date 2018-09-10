@@ -1,0 +1,202 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Navigation POC</title>
+<link href="styles.css" rel="stylesheet" type="text/css">
+<script src="scripts.js"></script>
+</head>
+<body>
+<div id="dropdown_wrapper">
+  <div onMouseOver="reHover()" id="re_content">
+	<h3>Reports</h3>
+		  <button id=showAllBtn>Show All<em class="eagleIcon" style="font-size: 18px; vertical-align:top">&#xe80f;</em></button>
+		  <button id="closeBtn"><i class="eagleIcon">&#xe810;</i></button>	
+		  <table>
+			  <tr>
+				<th>Most Run</th>
+			  </tr>
+			  <tr>
+				<td >Global Equity Perfomancance<br>
+				<em class="descript">Manual: 39x, Scheduled: 12x</em></td>
+			  </tr>
+			  <tr class="blankRow">
+				<td class="blankRow"></td>
+			  </tr>
+			  <tr>
+				<td>Performamce Overview<br>
+				<em class="descript">Manual: 32x, Scheduled: 9x</em></td>
+			  </tr>
+			  <tr class="blankRow">
+				<td class="blankRow"></td>
+			  </tr>
+			  <tr>
+				<td>Mutual Fund Value Added<br>
+				<em class="descript">Manual: 28x, Scheduled: 15x</em></td>
+			  </tr>
+			  <tr class="blankRow">
+				<td class="blankRow"></td>
+			  </tr>
+			  <tr>
+				<td class="firstColumn">Account Performance<br>
+				<em class="descript">Manual: 5x, Scheduled: 41x</em></td>
+			  </tr>
+			  <tr class="blankRow">
+				<td class="blankRow"></td>
+			  </tr>
+			  <tr>
+				<td class="firstColumn">Account Performance<br>
+				<em class="descript">Manual: 2x</em></td>
+			  </tr>
+		</table>
+		<table style="left:400px">
+			  <tr>
+				<th>Recently Run</th>
+			  </tr>
+			  <tr>
+				<td >Global Equity Perfomancance<br>
+				<em class="descript">Manual: 08/30/2018 08:03 AM</em></td>
+			  </tr>
+			  <tr class="blankRow">
+				<td class="blankRow"></td>
+			  </tr>
+			  <tr>
+				<td>Performamce Overview<br>
+				<em class="descript">Manual: 08/30/2018 07:03 AM</em></td>
+			  </tr>
+			  <tr class="blankRow">
+				<td class="blankRow"></td>
+			  </tr>
+			  <tr>
+				<td>Mutual Fund Value Added<br>
+				<em class="descript">Manual: 08/30/2018 06:03 AM</em></td>
+			  </tr>
+			  <tr class="blankRow">
+				<td class="blankRow"></td>
+			  </tr>
+			  <tr>
+				<td class="firstColumn">Account Performance<br>
+				<em class="descript">Scheduled: 08/30/2018 05:03 AM</em></td>
+			  </tr>
+			  <tr class="blankRow">
+				<td class="blankRow"></td>
+			  </tr>
+			  <tr>
+				<td class="firstColumn">Account Performance<br>
+				<em class="descript">Scheduled: 08/30/2018 04:03 AM</em></td>
+			  </tr>
+		</table>
+	  </div>
+  <div onMouseOver="acHover()" id="ac_content">
+  <h3>Placeholder</h3>
+		  <button id=showAllBtn>Show All<em class="eagleIcon" style="font-size: 18px; vertical-align:top">&#xe80f;</em></button>
+		  <button id="closeBtn"><i class="eagleIcon">&#xe810;</i></button>	
+  </div>
+  <div onMouseOver="icHover()" id="ic_content">
+  	<h3>Dashboards</h3>
+	  <button id=showAllBtn>Show All<em class="eagleIcon" style="font-size: 18px; vertical-align:top">&#xe80f;</em></button>
+  	  <button id="closeBtn"><i class="eagleIcon">&#xe810;</i></button>	
+  	  <table>
+		  <tr>
+			<th>Favorites<button id="editBtn"><em class="eagleIcon" style="font-size: 18px; vertical-align:middle">&#xe814;</em></button></th>
+		  </tr>
+		  <tr>
+			<td class="firstColumn">Global Equity Perfomance</td>
+		  </tr>
+		  <tr>
+			<td class="firstColumn">Performamce Overview</td>
+		  </tr>
+		  <tr>
+			<td class="firstColumn">Institutional Performance Overview</td>
+		  </tr>
+		  <tr>
+			<td class="firstColumn">AUM Overview</td>
+		  </tr>
+		  <tr>
+			<td class="firstColumn">Holdings Overview</td>
+		  </tr>
+		  <tr>
+			<td class="firstColumn">Performance vs. Risk</td>
+		  </tr>
+		  <tr>
+			<td class="firstColumn">Risk Analysis</td>
+		  </tr>
+		  <tr>
+			<td class="firstColumn">Portfolio Risk Attribution</td>
+		  </tr>
+		  <tr>
+			<td class="firstColumn">Portfolio Performance</td>
+		  </tr>
+		  <tr>
+			<td class="firstColumn">Peer Comparison</td>
+		  </tr>
+	</table>
+	<table style="left:400px">
+		  <tr>
+			<th>Recently Viewed</th>
+		  </tr>
+		  <tr>
+			<td >Global Equity Perfomancance<br>
+			<em class="descript">As of Prior Day, Global Equity Fund</em></td>
+		  </tr>
+		  <tr class="blankRow">
+			<td class="blankRow"></td>
+		  </tr>
+		  <tr>
+			<td>Performamce Overview<br>
+			<em class="descript">As of Prior Day, All Funds, Grouped by Asset Class</em></td>
+		  </tr>
+		  <tr class="blankRow">
+			<td class="blankRow"></td>
+		  </tr>
+		  <tr>
+			<td>Institutional Performancance Overview<br>
+			<em class="descript">Tempor incididunt ut labore et dolore magna aliqua</em></td>
+		  </tr>
+		  <tr class="blankRow">
+			<td class="blankRow"></td>
+		  </tr>
+		  <tr>
+			<td class="firstColumn">AUM Overview<br>
+			<em class="descript">Tempor Incididunt ut Labore et Dolore Magna aliqua, Incididunt ut Labore…</em></td>
+		  </tr>
+		  <tr class="blankRow">
+			<td class="blankRow"></td>
+		  </tr>
+		  <tr>
+			<td class="firstColumn">Holdings Overview<br>
+			<em class="descript">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed Equito Vosto…</em></td>
+		  </tr>
+	</table>
+  </div>
+</div>
+<div id="nav">
+  <button  onmouseover="icHover()" id="logoBtn"><img src="images/logo.png" width="26" height="22" alt=""/></button>	
+  <div onclick="icClick()" onmouseover="icHover()" onmouseout="icOut()" id="ic_button">
+    <p id="ic_text">INFORMATION CONSUMPTION</p>
+    <div id="ic_bleed"></div>
+  </div>
+  <div onclick="reClick()" onmouseover="reHover()" onmouseout="reOut()" id="re_button">
+    <p id="re_text">RE</p>
+    <p id="reports_text">REPORTING</p>
+    <div id="re_bleed"></div>
+  </div>
+  <div onclick="acClick()" onmouseover="acHover()" onmouseout="acOut()" id="ac_button">
+    <p id="ac_text">AC</p>
+    <p id="accounting_text">ACCOUNTING</p>
+    <div id="ac_bleed"></div>
+  </div>
+  <div onmouseover="icHover()" onmouseout="icOut()" id="nav_right"> </div>
+  <button  onmouseover="icHover()" id="logoutBtn">Log Out<img id="lockIcon" src="images/lock.png" width="12" height="15" alt=""/></button>
+</div>
+</div>
+<div onmouseover="queryHover()" onmouseout="queryOut()" id="query"> </div>
+<div class="dropdown"  onmouseover="icHover()" onmouseout="icOut()" id="ic_dropdown"></div>
+<div class="dropdown" onmouseover="acHover()" onmouseout="acOut()" id="ac_dropdown"></div>
+<div class="dropdown" onmouseover="reHover()" onmouseout="reOut()" id="re_dropdown"></div>
+</div>
+<p class="copy">This prototype is intended to illustrate the intended style and animations for the global navigation. This work also serves to document the many idiosyncrasies of timing and behavior that lend to a usable and refined experience. It has been coded in html and js for easy consumption by Dev. <br><br>Note: Info Consumption is the left-most button, only because it is the ‘App’ that the user is currently ‘in’.
+</p>
+<img id="img_background" onmouseover="bgHover()" src="images/aum_background.png" width="1280" height="900" alt=""/>
+</body>
+</html>

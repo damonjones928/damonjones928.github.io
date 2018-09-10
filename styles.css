@@ -48,6 +48,22 @@ td{
     text-align: left;
     padding: 8px;
 }
+.copy{
+	margin-top: 405px;
+	margin-left: 50px;
+	font-family: Roboto Condensed;
+	font-size: 24px;
+	font-weight: 100;
+	line-height: 30px;
+	display: block;
+	color: black;
+	height: 700px;
+	position: absolute;
+	z-index: -1;
+	width: 580px;
+	background: #DDDDDD;
+	transform: skewX(0)
+}
 .firstColumn{
 	font-weight: 400;
 }
@@ -259,7 +275,7 @@ tr.blankRow:hover{
 	top: 40px;
 }
 #dropdown_wrapper {
-	height: 570px;
+	height: 520px;
 	width: calc(100% - 50px);
 	z-index: 101;
 	display: block;
@@ -268,61 +284,62 @@ tr.blankRow:hover{
 	top: 40px;
 }
 #re_content {
-	height: 570px;
+	height: 520px;
 	width: 100%;
 	z-index: 1;
 	position: absolute;
-	margin-top: -570px;
+	margin-top: -520px;
 	transition: all .5s;
 	padding-left: 50px;
 }
 #ac_content {
-	height: 570px;
+	height: 520px;
 	width: 100%;
 	z-index: 101;
 	position: absolute;
-	margin-top: -570px;
+	margin-top: -520px;
 	transition: all .5s;
+	padding-left: 50px;
 }
 #ic_content {
-	height: 570px;
+	height: 520px;
 	width: 100%;
 	position: absolute;
 	z-index: 1;
-	margin-top: -570px;
+	margin-top: -520px;
 	transition: all .5s;
 	padding-left: 50px;
 }
 #re_dropdown {
-	height: 570px;
+	height: 520px;
 	width: 100%;
 	z-index: 0;
 	background: rgba(0,0,0,.9);
 	position: fixed;
-	top: -570px;
+	top: -520px;
 	transition: all .5s;
 }
 #ic_dropdown {
-	height: 570px;
+	height: 520px;
 	float: left;
 	width: 100%;
 	background: rgba(0,0,0,.9);
 	position: fixed;
-	top: -570px;
+	top: -520px;
 	z-index: 0;
 	transition: all .5s;
 }
 #ac_dropdown {
-	height: 570px;
+	height: 520px;
 	width: 100%;
 	z-index: 0;
 	background: rgba(0,0,0,.9);
 	position: fixed;
-	top: -570px;
+	top: -520px;
 	transition: all .5s;
 }
 .dropdown {
-	height: 570px;
+	height: 520px;
 	width: 1280px;
 	background: rgba(0,0,0,.9);
 	position: fixed;
@@ -362,7 +379,7 @@ tr.blankRow:hover{
 	position: fixed;
 	z-index: -1;
 	margin-top: -2px;
-	opacity: .8;
+	opacity: .5;
 	width: 100%;
 	background: url(images/ic_bleed.png);
 	background-repeat: no-repeat;
@@ -376,7 +393,7 @@ tr.blankRow:hover{
 	z-index: -1;
 	margin-top: 40px;
 	width: 100%;
-	opacity: .8;
+	opacity: .5;
 	background: url(images/re_bleed.png);
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -389,7 +406,7 @@ tr.blankRow:hover{
 	z-index: -10000;
 	margin-top: 40px;
 	width: 100%;
-	opacity: .8;
+	opacity: .5;
 	background: url(images/ac_bleed.png);
 	background-repeat: no-repeat;
 	background-size: cover;

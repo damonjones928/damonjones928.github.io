@@ -69,13 +69,13 @@ function icClick() {
 	document.getElementById("accounting_text").style.opacity = "0";
 	document.getElementById("reports_text").style.opacity = "0";
 	document.getElementById("ic_dropdown").style.top = "40px";
-	document.getElementById("re_dropdown").style.top = "-570px";
-	document.getElementById("ac_dropdown").style.top = "-570px";
+	document.getElementById("re_dropdown").style.top = "-520px";
+	document.getElementById("ac_dropdown").style.top = "-520px";
 	document.getElementById("re_bleed").style.height = "0px";
 	document.getElementById("ac_bleed").style.height = "0px";
 	document.getElementById("ic_bleed").style.height = "378px";
-	document.getElementById("re_content").style.marginTop = "-570px";
-	document.getElementById("ac_content").style.marginTop = "-570px";
+	document.getElementById("re_content").style.marginTop = "-520px";
+	document.getElementById("ac_content").style.marginTop = "-520px";
 	document.getElementById("ic_content").style.marginTop = "0";
 }
 
@@ -85,14 +85,14 @@ function reClick() {
 	document.getElementById("accounting_text").style.opacity = "0";
 	document.getElementById("reports_text").style.opacity = "1";
 	document.getElementById("re_dropdown").style.top = "40px";
-	document.getElementById("ic_dropdown").style.top = "-570px";
-	document.getElementById("ac_dropdown").style.top = "-570px";
+	document.getElementById("ic_dropdown").style.top = "-520px";
+	document.getElementById("ac_dropdown").style.top = "-520px";
 	document.getElementById("re_bleed").style.height = "378px";
 	document.getElementById("ac_bleed").style.height = "0px";
 	document.getElementById("ic_bleed").style.height = "0px";
 	document.getElementById("re_content").style.marginTop = "0";
-	document.getElementById("ac_content").style.marginTop = "-570px";
-	document.getElementById("ic_content").style.marginTop = "-570px";
+	document.getElementById("ac_content").style.marginTop = "-520px";
+	document.getElementById("ic_content").style.marginTop = "-520px";
 }
 
 function acClick() {
@@ -101,14 +101,14 @@ function acClick() {
 	document.getElementById("accounting_text").style.opacity = "1";
 	document.getElementById("reports_text").style.opacity = "0";
 	document.getElementById("ac_dropdown").style.top = "40px";
-	document.getElementById("re_dropdown").style.top = "-570px";
-	document.getElementById("ic_dropdown").style.top = "-570px";
+	document.getElementById("re_dropdown").style.top = "-520px";
+	document.getElementById("ic_dropdown").style.top = "-520px";
 	document.getElementById("ac_bleed").style.height = "378px";
 	document.getElementById("re_bleed").style.height = "0px";
 	document.getElementById("ic_bleed").style.height = "0px";
-	document.getElementById("re_content").style.marginTop = "-570px";
+	document.getElementById("re_content").style.marginTop = "-520px";
 	document.getElementById("ac_content").style.marginTop = "0";
-	document.getElementById("ic_content").style.marginTop = "-570px";
+	document.getElementById("ic_content").style.marginTop = "-520px";
 }
 
 function bgHover() {
@@ -117,15 +117,15 @@ function bgHover() {
 	document.getElementById("re_text").style.opacity = "0";
 	document.getElementById("accounting_text").style.opacity = "0";
 	document.getElementById("reports_text").style.opacity = "0";
-	document.getElementById("ac_dropdown").style.top = "-570px";
-	document.getElementById("re_dropdown").style.top = "-570px";
-	document.getElementById("ic_dropdown").style.top = "-570px";
+	document.getElementById("ac_dropdown").style.top = "-520px";
+	document.getElementById("re_dropdown").style.top = "-520px";
+	document.getElementById("ic_dropdown").style.top = "-520px";
 	document.getElementById("re_bleed").style.height = "0px";
 	document.getElementById("ac_bleed").style.height = "0px";
 	document.getElementById("ic_bleed").style.height = "0px";
-	document.getElementById("re_content").style.marginTop = "-570px";
-	document.getElementById("ac_content").style.marginTop = "-570px";
-	document.getElementById("ic_content").style.marginTop = "-570px";
+	document.getElementById("re_content").style.marginTop = "-520px";
+	document.getElementById("ac_content").style.marginTop = "-520px";
+	document.getElementById("ic_content").style.marginTop = "-520px";
 	document.getElementById("ac_button").style.width = "0px";
 	document.getElementById("re_button").style.width = "0px";
 	document.getElementById("ic_button").style.width = "212px";
