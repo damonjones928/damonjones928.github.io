@@ -18,6 +18,8 @@ body{
 }
 #funds {
 	width: 166px;
+	
+	font-weight: 500;
 }
 #time {
 	width: 196px;
