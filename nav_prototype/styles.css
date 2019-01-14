@@ -1,0 +1,177 @@
+@charset "UTF-8";
+/* CSS Document */
+html
+{
+    height: 100%;
+}
+body{
+	margin: 0px;
+	height: 100%;
+	background-color: #F7F7F7;
+}
+H1{
+	font-family: Roboto-Bold;
+	font-weight: 500;
+	font-size: 32px;
+	color: #222222;
+	margin-left: 30px;
+}
+H2{
+	font-family: Roboto-Regular;
+	font-weight: 500;
+	font-size: 18px;
+	color: #FFFFFF;
+}
+p{
+	font-family: Roboto-Regular;
+	font-weight: 500;
+	font-size: 16px;
+	color: #222222;
+	margin-left: 30px;
+}
+#header{
+	height: 150px;
+	width: 100%;
+	background: #FFFFFF;
+	position: fixed;
+	box-shadow: 0px 3px 6px 0px rgba(0,0,0,0.11);
+ 	transition-duration: .4s;
+	transition-timing-function: ease-out;
+}
+.stretchedHeader{
+	left: 61px;
+}
+.compressedHeader{
+	left: 301px;
+}
+.accordionLabel{
+	font-family: Roboto-Regular;
+	font-weight: 500;
+	font-size: 14px;
+	color: #FFFFFF;
+	display: inline-block;
+	padding-top: 16px;
+	padding-bottom: 2px;
+	width: 240px;
+	height: 32px;
+	padding-left: 24px;
+ 	transition-duration: 0.2s;
+	cursor: pointer;
+}
+.accordionLabel:hover{
+	color: #EFAD11;
+}
+.dashboardLabel{
+	font-family: Roboto-Light;
+	font-weight: 100;
+	font-size: 13px;
+	color: #FFFFFF;
+	display: inline-block;
+	padding-top: 16px;
+	margin-bottom: -4px;
+	width: 210px;
+	height: 32px;
+	border-radius: 4px;
+	padding-left: 17px;
+	margin-left: 7px;
+}
+.dashboardLabel:hover{
+	color: #EFAD11;
+	cursor: pointer;
+}
+#navColumn{
+	background-color: #000000;
+	width: 60px;
+	height: 100%;
+	position: fixed;
+	z-index: 1;
+}
+.navButton{
+	width: 45px;
+	height: 45px;
+	border-radius: 4px;
+	background: none;
+	cursor: pointer;
+	margin: 8px;
+	padding: 0px;
+	border: none;
+	color: #FFFFFF;
+}
+.navButton:hover{
+	color: #EFAD11;
+}
+.dashboardSelected{
+	background: #333333;
+}
+#dashboardPanel{
+	width: 240px;
+	height: 100%;
+	position: fixed;
+	top: 0px;
+	border-right: 1px solid #191919;
+	background: #191919;
+ 	transition-duration: .4s;
+	transition-timing-function: ease-out;
+}
+.expandedPanel{
+	left: 60px;	
+}
+
+.collapsedPanel{
+	left: -180px;	
+}
+#navHeader{
+	height: 55px;
+	width: 216px;
+	top: 0px;
+	border-bottom: 1px solid #555555;
+	padding-left: 24px;
+	padding-top: 5px;
+}
+#recentAccordion{
+ 	transition-duration: 0.4s;
+	transition-timing-function: ease-out;;
+}
+#alphaAccordion{
+ 	transition-duration: 0.4s;
+	transition-timing-function: ease-out;;
+}
+#betaAccordion{
+ 	transition-duration: 0.4s;
+	transition-timing-function: ease-out;;
+}
+#gammaAccordion{
+ 	transition-duration: 0.4s;
+	transition-timing-function: ease-out;;
+}
+#deltaAccordion{
+ 	transition-duration: 0.4s;
+	transition-timing-function: ease-out;;
+}
+.navAccordion{
+	width: 240px;
+	border-bottom: 1px solid #444444;
+	overflow: hidden;
+}
+.openAccordion{
+	height: 284px;
+	overflow: hidden;
+	border-bottom: 1px solid #444444;
+}
+.closedAccordion{
+	height: 47px;
+	overflow: hidden;
+	border-bottom: 1px solid #444444;
+}
+.accordionIcon{
+	right: 12px;
+	position: absolute;
+	height: 24px;
+	width: 24px;
+	margin-top: -38px;
+ 	transition-duration: 1.5s;
+	z-index: -1;
+}
+  body.disableOutline *:focus{
+        outline: none !important;
+    }
