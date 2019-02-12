@@ -1,0 +1,41 @@
+<!doctype html>
+<html><head>
+<meta charset="UTF-8">
+<title>M2 Redux Eagle Log In</title>
+<link rel='stylesheet' media='screen and (max-width: 900px)' type="text/css" href='styles_mobile.css' />
+<link rel='stylesheet' media='screen and (min-width: 901px)' type="text/css" href='styles.css' />
+<link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
+<script src="scripts.js"></script>
+<link rel="icon" type="image/png" href="images/eagle_fav.png" />
+</head>
+
+<body>
+<div id="loginContainer">
+	<div id="circleLogo">
+        <svg width="66px" height="54px" viewBox="0 0 66 54" style="margin-top: 20px;" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+			<g id="Group-2" fill="#ffffff">
+				<polygon points="44 10.6667234 33.0001316 0 0 32 11.0000439 32 33.0001316 10.6667234"></polygon>
+				<polygon points="55 21.6666667 43.9999561 11 21.9998684 32.3333333 11 32.3333333 21.9998684 43 43.9999561 21.6666667"></polygon>
+				<polygon points="55.0001316 22 33.0002193 43.3334467 22 43.3334467 33.0002193 54 55.0001316 32.6667234 66 32.6667234"></polygon>
+			</g>
+		</svg>
+    </g>
+	</div>
+	<p class="h1 regularFont loginMessage">Enter your corporate email address to access the secure log in screen.</p>
+	
+	<!--This Div should actually be a form-->	
+	
+	<div id="logInInputs">
+		<div id="errorFlag" class="errorFlag hidden">Lorem Ipsum Dolor Semper Est</div>
+		<input id="logInInputField" type="text" class="largeInput loginInputs" placeholder="Enter your corporate email address">
+		<input type="submit" onClick="submitClick()" value="Continue" class="largeBtn loginInputs"/>
+	</div>
+	
+	
+</div>
+<div id="footer">
+<span class="legal">© 2019 EAGLE INVESTMENT SYSTEMS LLC.</span>
+<div class="footerLink"><a href="index.html">Terms of Use</a>&nbsp&nbsp&nbsp|&nbsp&nbsp&nbsp<a href="index.html">Privacy Policy</a></div>
+<img class="bnyLogoFooter" src="images/ONL-LOGO-BNYM-EGIS-KO.svg" alt=""/> </div>
+</body>
+</html>
