@@ -9,25 +9,75 @@ body{
 	height: 100%;
 	background-color: #F7F7F7;
 }
-H1{
+.stat{
 	font-family: Roboto;
-	font-weight: 700;
-	font-size: 32px;
-	color: #222222;
-	margin-left: 30px;
-}
-H2{
-	font-family: Roboto;
-	font-weight: 700;
-	font-size: 19px;
+	font-weight: 300;
+	font-size: 50px;
+	line-height: 50px;
 	color: #222222;
 }
-p{
+.h1{
+	font-family: Roboto;
+	font-weight: 700;
+	font-size: 26px;
+	line-height: 30px;
+	color: #222222;
+}
+.h2{
+	font-family: Roboto;
+	font-weight: 700;
+	font-size: 16px;
+	line-height: 30px;
+	color: #222222;
+}
+.h3{
+	font-family: Roboto;
+	font-weight: 700;
+	font-size: 16px;
+	line-height: 20px;
+	color: #222222;
+}
+.e1Bold{
+	font-family: Roboto;
+	font-weight: 700;
+	font-size: 14px;
+	line-height: 16px;
+	color: #222222;
+}
+.e1Medium{
+	font-family: Roboto;
+	font-weight: 500;
+	font-size: 14px;
+	line-height: 16px;
+	color: #222222;
+}
+.e1Regular{
 	font-family: Roboto;
 	font-weight: 400;
-	font-size: 16px;
+	font-size: 14px;
+	line-height: 16px;
 	color: #222222;
-	margin-left: 30px;
+}
+.e2Regular{
+	font-family: Roboto;
+	font-weight: 400;
+	font-size: 13px;
+	line-height: 15px;
+	color: #222222;
+}
+.e3Bold{
+	font-family: Roboto;
+	font-weight: 700;
+	font-size: 12px;
+	line-height: 14px;
+	color: #222222;
+}
+.e3Regular{
+	font-family: Roboto;
+	font-weight: 400;
+	font-size: 12px;
+	line-height: 14px;
+	color: #222222;
 }
 #header{
 	height: 150px;
@@ -154,7 +204,7 @@ p{
 }
 .accordionLabel{
 	font-family: Roboto;
-	font-weight: 700;
+	font-weight: 400;
 	font-size: 14px;
 	color: #222222;
 	display: inline-block;
@@ -167,24 +217,24 @@ p{
 	cursor: pointer;
 }
 .accordionLabel:hover{
-	color: #EFAD11;
+	color: #75C4FF;
 }
 .dashboardLabel{
 	font-family: Roboto;
-	font-weight: 400;
+	font-weight: 300;
 	font-size: 13px;
 	color: #222222;
 	display: inline-block;
 	padding-top: 16px;
 	margin-bottom: -4px;
-	width: 210px;
+	width: 207px;
 	height: 32px;
 	border-radius: 4px;
 	padding-left: 17px;
 	margin-left: 7px;
 }
 .dashboardLabel:hover{
-	color: #EFAD11;
+	color: #75C4FF;
 	cursor: pointer;
 }
 #navColumn{
@@ -206,20 +256,26 @@ p{
 	color: #FFFFFF;
 }
 .navButton:hover{
-	color: #EFAD11;
+	color: #75C4FF;
 }
 .dashboardSelected{
-	background: #EEEEEE;
+	background: rgba(136,136,136,.33);
+}
+.dashboardSelected:hover{
+	color: #FFFFFF;
+	cursor:default;
 }
 #dashboardPanel{
 	width: 240px;
 	height: 100%;
 	position: fixed;
 	top: 0px;
-	border-right: 1px solid #CCCCCC;
-	background: #FFFFFF;
+	background: #222222;
  	transition-duration: .4s;
 	transition-timing-function: ease-out;
+}
+.navText{
+	color: #FFFFFF;
 }
 .expandedPanel{
 	left: 60px;	
@@ -229,12 +285,10 @@ p{
 	left: -180px;	
 }
 #navHeader{
-	height: 55px;
 	width: 216px;
 	top: 0px;
-	border-bottom: 1px solid #CCCCCC;
+	border-bottom: 1px solid rgba(136,136,136,.33);
 	padding-left: 24px;
-	padding-top: 5px;
 }
 #recentAccordion{
  	transition-duration: 0.4s;
@@ -258,18 +312,18 @@ p{
 }
 .navAccordion{
 	width: 240px;
-	border-bottom: 1px solid #CCCCCC;
+	border-bottom: 1px solid rgba(136,136,136,.33);
 	overflow: hidden;
 }
 .openAccordion{
 	height: 284px;
 	overflow: hidden;
-	border-bottom: 1px solid #CCCCCC;
+	border-bottom: 1px solid rgba(136,136,136,.33);
 }
 .closedAccordion{
 	height: 47px;
 	overflow: hidden;
-	border-bottom: 1px solid #CCCCCC;
+	border-bottom: 1px solid rgba(136,136,136,.33);
 }
 .accordionIcon{
 	right: 12px;

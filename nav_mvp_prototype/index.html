@@ -12,7 +12,7 @@
 <div id="navColumn">
 	<button  onMouseOver="arrowHover()" onMouseOut="arrowOut()" id="panelToggleButton" onClick="panelToggle()" class="navButton">
 		<svg width="1px;" height="1px;" viewBox="-10 0 32 20"><defs>
-			<style>.cls-1{fill:none;stroke:#FFFFFF;stroke-linecap:round;stroke-linejoin:round;stroke-width:1px;}</style></defs>
+			<style>.cls-1{fill:none;stroke:#FFFFFF;stroke-linecap:round;stroke-linejoin:round;stroke-width:1.5px;}</style></defs>
 			<polyline class="cls-1" id="toggle_arrow" points="9.69 0.5 0.5 9.69 9.69 18.89">
 				<animate class="cls-1" id="animation-to-right" begin="indefinite" fill="freeze" attributeName="points" dur="400ms" to="1 0.5 10.69 9.69 1 18.89"/>
 				<animate class="cls-1" id="animation-to-left" begin="indefinite" fill="freeze" attributeName="points" dur="400ms" to="9.69 0.5 0.5 9.69 9.69 18.89"/>
@@ -24,7 +24,7 @@
 			<!-- Generator: Sketch 51.3 (57544) - http://www.bohemiancoding.com/sketch -->
 			<title>Dashboard Icon</title>
 			<defs></defs>
-			<g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+			<g stroke="none" stroke-width="1.5" fill="none" fill-rule="evenodd">
         	<rect fill-opacity="1" fill="#333333" fill-rule="nonzero" x="0" y="0" width="45" height="45" rx="4"></rect>
 				<g transform="translate(-7.000000, -59.000000)">
 					<g transform="translate(-1.000000, -2.000000)">
@@ -45,12 +45,12 @@
 		<svg width="45px" height="45px" viewBox="0 0 45 45" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 			<title>Log Out Icon</title>
 			<defs></defs>
-			  <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+			  <g stroke="none" stroke-width="1.5" fill="none" fill-rule="evenodd">
 				<rect id="Rectangle-12-Copy-3" fill-opacity="0" fill="#333333" fill-rule="nonzero" x="0" y="0" width="45" height="45" rx="4"></rect>
 				<g id="log_out_icon" transform="translate(-9.000000, -119.000000)" stroke="#FFFFFF">
 					<g  transform="translate(18.000000, 128.000000)">
 						<polyline points="25.5 20.58 25.5 26.55 0.55 26.55 0.55 0.55 25.5 0.55 25.5 6.55"/>
-						<polyline  stroke-width="1.1" points="14.18 19.91 7.82 13.54 14.18 7.18"/>
+						<polyline  stroke-width="1.7" points="14.18 19.91 7.82 13.54 14.18 7.18"/>
 						<line x1="8.02" y1="13.54" x2="28.02" y2="13.54"/>
 					</g>
 				</g>
@@ -126,11 +126,11 @@
 	</button>-->
 </div>
 <div class="expandedPanel" id="dashboardPanel">
-	<div id="navHeader">
-		<H2>Dashboards</H2>
+	<div style="height: 42px; margin-top: -5px" id="navHeader">
+		<p class="h2 navText" style="font-weight:400; font-size:19px">Dashboards</p>
 	</div>
 	<div id="recentAccordion" class="navAccordion openAccordion">
-		<div onClick="recentToggle()" onMouseOut="recentOut()" onMouseOver="recentOver()" class="accordionLabel">Recent</div>
+		<div onClick="recentToggle()" onMouseOut="recentOut()" onMouseOver="recentOver()" class="accordionLabel navText">All Dashboard</div>
 		<div class="accordionIcon">
 			<svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" width="2px;" height="2px;" viewBox="-5 0 24 7.66"><defs>
 				<style>.cls-2{fill:none;stroke:#888888;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px;}</style></defs>
@@ -140,11 +140,11 @@
 				</polyline>
 			</svg>
 		</div>
-		<a class="dashboardLabel dashboardSelected">Executive Summary</a>
-		<a class="dashboardLabel">Lortem Ipsum</a>
-		<a class="dashboardLabel">Lortem Ipsum</a>
-		<a class="dashboardLabel">Lortem Ipsum</a>
-		<a class="dashboardLabel">Lortem Ipsum</a>
+		<a class="dashboardLabel navText dashboardSelected">Executive Summary</a>
+		<a class="dashboardLabel navText">Lortem Ipsum</a>
+		<a class="dashboardLabel navText">Lortem Ipsum</a>
+		<a class="dashboardLabel navText">Lortem Ipsum</a>
+		<a class="dashboardLabel navText">Lortem Ipsum</a>
 	</div>
 	
 <!--	<div id="alphaAccordion" class="navAccordion closedAccordion">
