@@ -9,75 +9,25 @@ body{
 	height: 100%;
 	background-color: #F7F7F7;
 }
-.stat{
-	font-family: Roboto;
-	font-weight: 300;
-	font-size: 50px;
-	line-height: 50px;
-	color: #222222;
-}
-.h1{
-	font-family: Roboto;
-	font-weight: 700;
-	font-size: 26px;
-	line-height: 30px;
-	color: #222222;
-}
-.h2{
-	font-family: Roboto;
-	font-weight: 700;
-	font-size: 16px;
-	line-height: 30px;
-	color: #222222;
-}
-.h3{
-	font-family: Roboto;
-	font-weight: 700;
-	font-size: 16px;
-	line-height: 20px;
-	color: #222222;
-}
-.e1Bold{
-	font-family: Roboto;
-	font-weight: 700;
-	font-size: 14px;
-	line-height: 16px;
-	color: #222222;
-}
-.e1Medium{
-	font-family: Roboto;
+H1{
+	font-family: Roboto-Bold;
 	font-weight: 500;
-	font-size: 14px;
-	line-height: 16px;
+	font-size: 32px;
+	color: #222222;
+	margin-left: 30px;
+}
+H2{
+	font-family: Roboto-Bold;
+	font-weight: 100;
+	font-size: 19px;
 	color: #222222;
 }
-.e1Regular{
-	font-family: Roboto;
-	font-weight: 400;
-	font-size: 14px;
-	line-height: 16px;
+p{
+	font-family: Roboto-Regular;
+	font-weight: 500;
+	font-size: 16px;
 	color: #222222;
-}
-.e2Regular{
-	font-family: Roboto;
-	font-weight: 400;
-	font-size: 13px;
-	line-height: 15px;
-	color: #222222;
-}
-.e3Bold{
-	font-family: Roboto;
-	font-weight: 700;
-	font-size: 12px;
-	line-height: 14px;
-	color: #222222;
-}
-.e3Regular{
-	font-family: Roboto;
-	font-weight: 400;
-	font-size: 12px;
-	line-height: 14px;
-	color: #222222;
+	margin-left: 30px;
 }
 #header{
 	height: 150px;
@@ -203,8 +153,8 @@ body{
 	left: 301px;
 }
 .accordionLabel{
-	font-family: Roboto;
-	font-weight: 400;
+	font-family: Roboto-Bold;
+	font-weight: 500;
 	font-size: 14px;
 	color: #222222;
 	display: inline-block;
@@ -217,24 +167,24 @@ body{
 	cursor: pointer;
 }
 .accordionLabel:hover{
-	color: #75C4FF;
+	color: #EFAD11;
 }
 .dashboardLabel{
-	font-family: Roboto;
-	font-weight: 300;
+	font-family: Roboto-Regular;
+	font-weight: 100;
 	font-size: 13px;
 	color: #222222;
 	display: inline-block;
 	padding-top: 16px;
 	margin-bottom: -4px;
-	width: 207px;
+	width: 210px;
 	height: 32px;
 	border-radius: 4px;
 	padding-left: 17px;
 	margin-left: 7px;
 }
 .dashboardLabel:hover{
-	color: #75C4FF;
+	color: #EFAD11;
 	cursor: pointer;
 }
 #navColumn{
@@ -256,26 +206,20 @@ body{
 	color: #FFFFFF;
 }
 .navButton:hover{
-	color: #75C4FF;
+	color: #EFAD11;
 }
 .dashboardSelected{
-	background: rgba(136,136,136,.33);
-}
-.dashboardSelected:hover{
-	color: #FFFFFF;
-	cursor:default;
+	background: #EEEEEE;
 }
 #dashboardPanel{
 	width: 240px;
 	height: 100%;
 	position: fixed;
 	top: 0px;
-	background: #222222;
+	border-right: 1px solid #CCCCCC;
+	background: #FFFFFF;
  	transition-duration: .4s;
 	transition-timing-function: ease-out;
-}
-.navText{
-	color: #FFFFFF;
 }
 .expandedPanel{
 	left: 60px;	
@@ -285,10 +229,12 @@ body{
 	left: -180px;	
 }
 #navHeader{
+	height: 55px;
 	width: 216px;
 	top: 0px;
-	border-bottom: 1px solid rgba(136,136,136,.33);
+	border-bottom: 1px solid #CCCCCC;
 	padding-left: 24px;
+	padding-top: 5px;
 }
 #recentAccordion{
  	transition-duration: 0.4s;
@@ -312,18 +258,18 @@ body{
 }
 .navAccordion{
 	width: 240px;
-	border-bottom: 1px solid rgba(136,136,136,.33);
+	border-bottom: 1px solid #CCCCCC;
 	overflow: hidden;
 }
 .openAccordion{
 	height: 284px;
 	overflow: hidden;
-	border-bottom: 1px solid rgba(136,136,136,.33);
+	border-bottom: 1px solid #CCCCCC;
 }
 .closedAccordion{
 	height: 47px;
 	overflow: hidden;
-	border-bottom: 1px solid rgba(136,136,136,.33);
+	border-bottom: 1px solid #CCCCCC;
 }
 .accordionIcon{
 	right: 12px;
@@ -333,55 +279,6 @@ body{
 	margin-top: -38px;
  	transition-duration: 1.5s;
 	z-index: -1;
-}
-.panelToggleRight{
-  animation-name: animateRight;
-  animation-duration:.2s;
-  animation-iteration-count: 1;
-  animation-timing-function: ease-out;
-  animation-fill-mode: forwards;	width: 45px;
-	height: 45px;
-	border-radius: 4px;
-	background: none;
-	cursor: pointer;
-	margin: 8px;
-	padding: 0px;
-	border: none;
-	color: #FFFFFF;
-}
-@keyframes animateRight {
-from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(180deg);
-  }
-}
-body.disableOutline *:focus{
-        outline: none !important;
-}
-.panelToggleLeft{
-  animation-name: animateLeft;
-  animation-duration:.2s;
-  animation-iteration-count: 1;
-  animation-timing-function: ease-out;
-  animation-fill-mode: forwards;	width: 45px;
-	height: 45px;
-	border-radius: 4px;
-	background: none;
-	cursor: pointer;
-	margin: 8px;
-	padding: 0px;
-	border: none;
-	color: #FFFFFF;
-}
-@keyframes animateLeft {
-from {
-    transform: rotate(180deg);
-  }
-  to {
-    transform: rotate(0deg);
-  }
 }
 body.disableOutline *:focus{
         outline: none !important;

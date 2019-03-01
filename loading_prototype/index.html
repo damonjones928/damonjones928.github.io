@@ -2,9 +2,9 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Navigation MVP Prototype</title>
+<title>Navigation Prototype</title>
 <link href="styles.css" rel="stylesheet" type="text/css">
-<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
+<link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
 <script src="scripts.js"></script>
 </head>
 
@@ -12,8 +12,11 @@
 <div id="navColumn">
 	<button  onMouseOver="arrowHover()" onMouseOut="arrowOut()" id="panelToggleButton" onClick="panelToggle()" class="navButton">
 		<svg width="1px;" height="1px;" viewBox="-10 0 32 20"><defs>
-			<style>.cls-1{fill:none;stroke:#FFFFFF;stroke-linecap:round;stroke-linejoin:round;stroke-width:1.5px;}</style></defs>
-			<polyline class="cls-1" id="toggle_arrow" points="9.69 0.5 0.5 9.69 9.69 18.89"></polyline>
+			<style>.cls-1{fill:none;stroke:#FFFFFF;stroke-linecap:round;stroke-linejoin:round;stroke-width:1px;}</style></defs>
+			<polyline class="cls-1" id="toggle_arrow" points="9.69 0.5 0.5 9.69 9.69 18.89">
+				<animate class="cls-1" id="animation-to-right" begin="indefinite" fill="freeze" attributeName="points" dur="400ms" to="1 0.5 10.69 9.69 1 18.89"/>
+				<animate class="cls-1" id="animation-to-left" begin="indefinite" fill="freeze" attributeName="points" dur="400ms" to="9.69 0.5 0.5 9.69 9.69 18.89"/>
+			</polyline>
 		</svg>
 	</button>
 	<button onMouseOver="dashboardHover()" onMouseOut="dashboardOut()" onClick="dashboardToggle()" class="navButton">
@@ -21,40 +24,25 @@
 			<!-- Generator: Sketch 51.3 (57544) - http://www.bohemiancoding.com/sketch -->
 			<title>Dashboard Icon</title>
 			<defs></defs>
-			<g stroke="none" stroke-width="1.5" fill="none" fill-rule="evenodd">
-        	<rect fill-opacity="1" fill="#333333" fill-rule="nonzero" x="0" y="0" width="45" height="45" rx="4"></rect>
-				<g transform="translate(-7.000000, -59.000000)">
-					<g transform="translate(-1.000000, -2.000000)">
-						<g id="dashboard_icon"  stroke="#FFFFFF" stroke-linejoin="round" transform="translate(8.000000, 61.000000)">
-							<g >
-								<path d="M9.5,16.5 L9.5,10.5 L20.5,10.5 L20.5,16.5 L9.5,16.5 Z" id="Stroke-1"></path>
-								<path d="M24.5,34.5 L24.5,28.5 L35.5,28.5 L35.5,34.5 L24.5,34.5 Z" id="Stroke-2"></path>
-								<path d="M24.5,24.5 L24.5,10.5 L35.5,10.5 L35.5,24.5 L24.5,24.5 Z" id="Stroke-2-Copy"></path>
-								<path d="M9.5,34.5 L9.5,20.5 L20.5,20.5 L20.5,34.5 L9.5,34.5 Z" id="Stroke-3"></path>
+			<g id="Sketches-2" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+				<g id="10" transform="translate(-8.000000, -60.000000)">
+					<g id="Group-8" transform="translate(8.000000, 60.000000)">
+						<rect id="Rectangle-12-Copy-3" fill-opacity="1" fill="#333333" fill-rule="nonzero" x="0" y="0" width="45" height="45" rx="4"></rect>
+						<g id="dashboard_icon" transform="translate(1.000000, 5.000000)" stroke="#FFFFFF" stroke-linejoin="round">
+							<path d="M9.5,13.5 L9.5,5.5 L20.5,5.5 L20.5,13.5 L9.5,13.5 Z" id="Stroke-1"></path>
+							<path d="M24.5,29.5 L24.5,19.5 L34.5,19.5 L34.5,29.5 L24.5,29.5 Z" id="Stroke-2"></path>
+							<path d="M9.5,29.5 L9.5,17.5 L20.5,17.5 L20.5,29.5 L9.5,29.5 Z" id="Stroke-3"></path>
+							<g id="Group-12" stroke-linecap="round">
+								<path d="M34.6153846,10.2307692 C34.6153846,13.0559231 32.3251538,15.3461538 29.5,15.3461538 C26.6748462,15.3461538 24.3846154,13.0559231 24.3846154,10.2307692 C24.3846154,7.40561538 26.6748462,5.11538462 29.5,5.11538462 C32.3251538,5.11538462 34.6153846,7.40561538 34.6153846,10.2307692 Z" id="Stroke-8"></path>
+								<polyline id="Stroke-10" points="29.5 6 29.5 10.5 33.8846154 10.5"></polyline>
 							</g>
 						</g>
 					</g>
 				</g>
-    		</g>
+			</g>
 		</svg>
 	</button>
-	<button onMouseOver="logOutHover()" onMouseOut="logOutOut()" onClick="logOutToggle" class="navButton">	
-		<svg width="45px" height="45px" viewBox="0 0 45 45" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-			<title>Log Out Icon</title>
-			<defs></defs>
-			  <g stroke="none" stroke-width="1.5" fill="none" fill-rule="evenodd">
-				<rect id="Rectangle-12-Copy-3" fill-opacity="0" fill="#333333" fill-rule="nonzero" x="0" y="0" width="45" height="45" rx="4"></rect>
-				<g id="log_out_icon" transform="translate(-9.000000, -119.000000)" stroke="#FFFFFF">
-					<g  transform="translate(18.000000, 128.000000)">
-						<polyline points="25.5 20.58 25.5 26.55 0.55 26.55 0.55 0.55 25.5 0.55 25.5 6.55"/>
-						<polyline  stroke-width="1.7" points="14.18 19.91 7.82 13.54 14.18 7.18"/>
-						<line x1="8.02" y1="13.54" x2="28.02" y2="13.54"/>
-					</g>
-				</g>
-   			 </g>
-		</svg>
-	</button>
-	<!--<button onMouseOver="searchHover()" onMouseOut="searchOut()" onClick="searchToggle" class="navButton">
+	<button onMouseOver="searchHover()" onMouseOut="searchOut()" onClick="searchToggle" class="navButton">
 		<svg width="45px" height="45px" viewBox="0 0 45 45" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 			<!-- Generator: Sketch 51.3 (57544) - http://www.bohemiancoding.com/sketch -->
 			<title>Search Icon</title>
@@ -71,8 +59,8 @@
 				</g>
 			</g>
 		</svg>
-	</button>-->
-	<!--<button onMouseOver="reportsHover()" onMouseOut="reportsOut()" class="navButton">
+	</button>
+	<button onMouseOver="reportsHover()" onMouseOut="reportsOut()" class="navButton">
 		<svg width="45px" height="45px" viewBox="0 0 45 45" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 			<!-- Generator: Sketch 51.3 (57544) - http://www.bohemiancoding.com/sketch -->
 			<title>Reports Icon</title>
@@ -96,8 +84,8 @@
 				</g>
 			</g>
 		</svg>
-	</button>-->
-	<!--<button id="profileButton" onMouseOver="profileHover()" onMouseOut="profileOut()" class="navButton">
+	</button>
+	<button id="profileButton" onMouseOver="profileHover()" onMouseOut="profileOut()" class="navButton">
 		<svg width="45px" height="45px" viewBox="0 0 45 45" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 			<title>Profile Icon</title>
 			<defs></defs>
@@ -120,14 +108,14 @@
 				</g>
 			</g>
 		</svg>
-	</button>-->
+	</button>
 </div>
 <div class="expandedPanel" id="dashboardPanel">
-	<div style="height: 42px; margin-top: -5px" id="navHeader">
-		<p class="h2 navText" style="font-weight:400; font-size:19px">Dashboards</p>
+	<div id="navHeader">
+		<H2>Dashboards</H2>
 	</div>
 	<div id="recentAccordion" class="navAccordion openAccordion">
-		<div onClick="recentToggle()" onMouseOut="recentOut()" onMouseOver="recentOver()" class="accordionLabel navText">All Dashboard</div>
+		<div onClick="recentToggle()" onMouseOut="recentOut()" onMouseOver="recentOver()" class="accordionLabel">Recent</div>
 		<div class="accordionIcon">
 			<svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" width="2px;" height="2px;" viewBox="-5 0 24 7.66"><defs>
 				<style>.cls-2{fill:none;stroke:#888888;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px;}</style></defs>
@@ -137,14 +125,14 @@
 				</polyline>
 			</svg>
 		</div>
-		<a class="dashboardLabel navText dashboardSelected">Executive Summary</a>
-		<a class="dashboardLabel navText">Lortem Ipsum</a>
-		<a class="dashboardLabel navText">Lortem Ipsum</a>
-		<a class="dashboardLabel navText">Lortem Ipsum</a>
-		<a class="dashboardLabel navText">Lortem Ipsum</a>
+		<a class="dashboardLabel dashboardSelected">Executive Summary</a>
+		<a class="dashboardLabel">Lortem Ipsum</a>
+		<a class="dashboardLabel">Lortem Ipsum</a>
+		<a class="dashboardLabel">Lortem Ipsum</a>
+		<a class="dashboardLabel">Lortem Ipsum</a>
 	</div>
 	
-<!--	<div id="alphaAccordion" class="navAccordion closedAccordion">
+	<div id="alphaAccordion" class="navAccordion closedAccordion">
 		<div onClick="alphaToggle()" onMouseOut="alphaOut()" onMouseOver="alphaOver()" class="accordionLabel">Alpha Dashboard Types</div>
 		<div class="accordionIcon">
 			<svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" width="2px;" height="2px;" viewBox="-5 0 24 7.66"><defs>
@@ -214,13 +202,13 @@
 		<a class="dashboardLabel">Lortem Ipsum</a>
 		<a class="dashboardLabel">Lortem Ipsum</a>
 		<a class="dashboardLabel">Lortem Ipsum</a>
-	</div>-->
+	</div>
 </div>
 <!--<div class="compressedHeader" id="header">
 	<h1>Executive Summary</h1>
 	<p>The purpose of this prototype is to illustrate the basic animation and behavior of the left navigation panel.</p>
 </div>-->
-<!--<div class="compressedContent" id="content">
+<div class="compressedContent" id="content">
 	<div class="single widget">
 		<div class="widgetLabelBox loading"></div>
 		<div class="widgetStatBox loading"></div>
@@ -257,6 +245,6 @@
 		<div class="widgetTripleContentBox loading"></div>
 		<div class="widgetFooterBox loading"></div>
 	</div>
-</div>-->
+</div>
 </body>
 </html>
