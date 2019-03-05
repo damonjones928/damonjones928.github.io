@@ -190,7 +190,7 @@ body{
 	background: none;
 }
 .regularInput:hover {
-  	background-color: #ffffff;
+  	background-color: #f7f7f7;
 }
 .regularInput:focus {
   	background-color: #ffffff;
