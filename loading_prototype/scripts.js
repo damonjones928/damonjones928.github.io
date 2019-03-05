@@ -1,51 +1,48 @@
 // JavaScript Document
-  document.addEventListener('click', _handleMouseClick,true);
-            document.addEventListener('keydown',_keydown,true);
-            function _handleMouseClick(event){
-                if(event.detail){
-                    document.getElementsByTagName("body")[0].classList.add("disableOutline");
-                }
-            }
-            function _keydown(e){
-                document.getElementsByTagName("body")[0].classList.remove("disableOutline");
-            }
+document.addEventListener('click', _handleMouseClick,true);
+	document.addEventListener('keydown',_keydown,true);
+	function _handleMouseClick(event){
+		if(event.detail){
+			document.getElementsByTagName("body")[0].classList.add("disableOutline");
+		}
+	}
+	function _keydown(e){
+		document.getElementsByTagName("body")[0].classList.remove("disableOutline");
+	}
+
 function panelToggle() {
     var dashboardPanel = document.getElementById("dashboardPanel");
     var buttons = document.getElementById("panelToggleButton");
-    var Xontent = document.getElementById("content");
-	var animationToLeft = document.getElementById("animation-to-left");
-    var animationToRight = document.getElementById("animation-to-right");
+    //var Xontent = document.getElementById("content");
 	var header = document.getElementById("header");
 	if (dashboardPanel.className === "expandedPanel") {
         dashboardPanel.className = "collapsedPanel";
-		animationToRight.beginElement();
-		//header.className = "stretchedHeader";
-		Xontent.className = "stretchedContent";
+		buttons.className = "panelToggleRight";
+		//Xontent.className = "stretchedContent";
     } else {
         dashboardPanel.className = "expandedPanel";
-		animationToLeft.beginElement();
-		Xontent.className = "compressedContent";
+		buttons.className = "panelToggleLeft";
+		//Xontent.className = "compressedContent";
     }
 }
 
 function dashboardToggle() {
     var dashboardPanel = document.getElementById("dashboardPanel");
     var buttons = document.getElementById("panelToggleButton");
-	var animationToLeft = document.getElementById("animation-to-left");
-    var animationToRight = document.getElementById("animation-to-right");
+	var toggleArrow = document.getElementById("toggle_arrow");
+	//var animationToLeft = document.getElementById("animation-to-left");
+    //var animationToRight = document.getElementById("animation-to-right");
 	var header = document.getElementById("header");
 	if (dashboardPanel.className === "collapsedPanel") {
         dashboardPanel.className = "expandedPanel";
 		header.className = "compressedHeader";
-		animationToLeft.beginElement();
+		buttons.className = "panelToggleRight";
+		//animationToLeft.beginElement();
     } else {
+		
+		buttons.className = "panelToggleLeft";
     }
 }
-
-
-
-
-
 
 function recentToggle(){
 	var recentAccordion = document.getElementById("recentAccordion");
@@ -61,14 +58,14 @@ function recentToggle(){
     var animationToDownD = document.getElementById("animation-to-down-D");
 	if (recentAccordion.className === "closedAccordion") {
         recentAccordion.className = "openAccordion";
-		alphaAccordion.className = "closedAccordion";
+		/*alphaAccordion.className = "closedAccordion";
 		betaAccordion.className = "closedAccordion";
 		gammaAccordion.className = "closedAccordion";
 		deltaAccordion.className = "closedAccordion";
 		animationToDownA.beginElement();	
 		animationToDownB.beginElement();
 		animationToDownG.beginElement();
-		animationToDownD.beginElement();
+		animationToDownD.beginElement();*/
 		animationToUpR.beginElement();
     } else {
         recentAccordion.className = "closedAccordion";
@@ -76,7 +73,7 @@ function recentToggle(){
     }
 }
 
-function alphaToggle(){
+/*function alphaToggle(){
 	var recentAccordion = document.getElementById("recentAccordion");
 	var alphaAccordion = document.getElementById("alphaAccordion");
 	var betaAccordion = document.getElementById("betaAccordion");
@@ -103,9 +100,9 @@ function alphaToggle(){
 		animationToDownG.beginElement();
 		animationToDownD.beginElement();
     }
-}
+}*/
 
-function betaToggle(){
+/*function betaToggle(){
 	var recentAccordion = document.getElementById("recentAccordion");
 	var alphaAccordion = document.getElementById("alphaAccordion");
 	var betaAccordion = document.getElementById("betaAccordion");
@@ -133,9 +130,9 @@ function betaToggle(){
 		animationToDownD.beginElement();
     }
 }
+*/
 
-
-function gammaToggle(){
+/*function gammaToggle(){
 	var recentAccordion = document.getElementById("recentAccordion");
 	var alphaAccordion = document.getElementById("alphaAccordion");
 	var betaAccordion = document.getElementById("betaAccordion");
@@ -162,8 +159,8 @@ function gammaToggle(){
 		animationToDownB.beginElement();
 		animationToDownD.beginElement();
     }
-}
-function deltaToggle(){
+}*/
+/*function deltaToggle(){
 	var recentAccordion = document.getElementById("recentAccordion");
 	var alphaAccordion = document.getElementById("alphaAccordion");
 	var betaAccordion = document.getElementById("betaAccordion");
@@ -190,7 +187,7 @@ function deltaToggle(){
 		animationToDownB.beginElement();
 		animationToDownD.beginElement();
     }
-}
+}*/
 
 function widgetFourOver(){
 	var iconThreeDots = document.getElementById("iconThreeDots");
@@ -200,19 +197,17 @@ function widgetFourOut(){
 	var iconThreeDots = document.getElementById("iconThreeDots");
 	iconThreeDots.style.fill = "#CCCCCC";
 }
-
-
 function recentOver(){
 	var recentArrow = document.getElementById("recentArrow");
-	recentArrow.style.stroke = "#EFAD11";
+	recentArrow.style.stroke = "#75C4FF";
 }
 function recentOut(){
 	var recentArrow = document.getElementById("recentArrow");
-	recentArrow.style.stroke = "#222222";
+	recentArrow.style.stroke = "#888888";
 }
 function alphaOver(){
 	var alphaArrow = document.getElementById("alphaArrow");
-	alphaArrow.style.stroke = "#EFAD11";
+	alphaArrow.style.stroke = "#75C4FF";
 }
 function alphaOut(){
 	var alphaArrow = document.getElementById("alphaArrow");
@@ -220,7 +215,7 @@ function alphaOut(){
 }
 function betaOver(){
 	var betaArrow = document.getElementById("betaArrow");
-	betaArrow.style.stroke = "#EFAD11";
+	betaArrow.style.stroke = "#75C4FF";
 }
 function betaOut(){
 	var betaArrow = document.getElementById("betaArrow");
@@ -228,7 +223,7 @@ function betaOut(){
 }
 function gammaOver(){
 	var gammaArrow = document.getElementById("gammaArrow");
-	gammaArrow.style.stroke = "#EFAD11";
+	gammaArrow.style.stroke = "#75C4FF";
 }
 function gammaOut(){
 	var gammaArrow = document.getElementById("gammaArrow");
@@ -236,18 +231,15 @@ function gammaOut(){
 }
 function deltaOver(){
 	var deltaArrow = document.getElementById("deltaArrow");
-	deltaArrow.style.stroke = "#EFAD11";
+	deltaArrow.style.stroke = "#75C4FF";
 }
 function deltaOut(){
 	var deltaArrow = document.getElementById("deltaArrow");
 	deltaArrow.style.stroke = "#888888";
 }
-
-
-
 function profileHover(){
 	var profileCircle = document.getElementById("profile_circle");
-	profileCircle.style.stroke = "EFAD11";
+	profileCircle.style.stroke = "75C4FF";
 }
 function profileOut(){
 	var profileCircle = document.getElementById("profile_circle");
@@ -255,7 +247,7 @@ function profileOut(){
 }
 function reportsHover(){
 	var reportsIcon = document.getElementById("reports");
-	reportsIcon.style.stroke = "#EFAD11";
+	reportsIcon.style.stroke = "#75C4FF";
 }
 function reportsOut(){
 	var reportsIcon = document.getElementById("reports");
@@ -263,7 +255,7 @@ function reportsOut(){
 }
 function searchHover(){
 	var searchIcon = document.getElementById("search");
-	searchIcon.style.stroke = "#EFAD11";
+	searchIcon.style.stroke = "#75C4FF";
 }
 function searchOut(){
 	var searchIcon = document.getElementById("search");
@@ -271,7 +263,7 @@ function searchOut(){
 }
 function dashboardHover(){
 	var dashboardIcon = document.getElementById("dashboard_icon");
-	dashboardIcon.style.stroke = "#EFAD11";
+	dashboardIcon.style.stroke = "#75C4FF";
 }
 function dashboardOut(){
 	var dashboardIcon = document.getElementById("dashboard_icon");
@@ -279,9 +271,17 @@ function dashboardOut(){
 }
 function arrowHover(){
 	var toggleArrow = document.getElementById("toggle_arrow");
-	toggleArrow.style.stroke = "#EFAD11";
+	toggleArrow.style.stroke = "#75C4FF";
 }
 function arrowOut(){
 	var toggleArrow = document.getElementById("toggle_arrow");
 	toggleArrow.style.stroke = "#FFFFFF";
+}
+function logOutHover(){
+	var logOutIcon = document.getElementById("log_out_icon");
+	logOutIcon.style.stroke = "#75C4FF";
+}
+function logOutOut(){
+	var logOutIcon = document.getElementById("log_out_icon");
+	logOutIcon.style.stroke = "#FFFFFF";
 }
