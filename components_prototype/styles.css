@@ -116,6 +116,35 @@ body{
 	opacity: .8;
 	cursor: pointer;
 }
+.strokeBtn{
+	height: 36px;
+	width: 170px;
+	border: 1px solid #026AF3;
+	border-radius: 4px;
+	color: #026AF3;
+	background-image: linear-gradient(#FFFFFF, #F7F7F7);
+	box-shadow: 0px 1px 2px rgba(0,0,0,.2);
+	font-family: Roboto;
+	font-weight: 500;
+	font-size: 14px;
+	cursor: pointer;
+}
+.strokeBtn:hover{
+	background: #ffffff;
+	color: #026AF3;
+}
+.strokeBtn[disabled]:hover{
+	opacity: .5;
+	color: #222222;
+}
+.strokeBtn:disabled{
+	opacity: .5;
+	cursor:default;
+}
+.strokeBtn:active{
+	opacity: .8;
+	cursor: pointer;
+}
 .ghostBtn{
 	height: 36px;
 	width: 170px;
