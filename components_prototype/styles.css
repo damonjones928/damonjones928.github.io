@@ -333,7 +333,7 @@ body{
 	width: auto;
 }
 .largeShadow{
-	box-shadow: 0px 3px 15px 0px rgba(0,0,0,0.20);
+	box-shadow: 0px 3px 15px 0px rgba(0,0,0,0.2);
 	text-align: center;
 }
 .margin20{
