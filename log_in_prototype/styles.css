@@ -271,7 +271,7 @@ body.disableOutline *:focus{
 #loginContainer{
 	max-width: 570px;
 	border-radius: 4px;
-	filter: drop-shadow(0px 3px 10px rgba(0,0,0,0.2));
+	box-shadow: 0px 3px 15px 0px rgba(0,0,0,0.2);
 	height: 440px;
 	background: #ffffff;
 	margin: auto;
