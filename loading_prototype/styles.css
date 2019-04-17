@@ -126,7 +126,57 @@ p{
 	animation: Gradient 30s linear infinite;
 }
 
-
+#loadingBar{
+	width: calc(100% - 300px);
+	height: 3px;
+	position: fixed;
+	top: -11px;
+	margin-left: -10px;
+	margin-right: -30px;
+	animation: Gradient 30s linear infinite;
+}
+#loadingLeft{
+	background: linear-gradient(to right, #026af3 50%, #F7F7F7 50%);
+	height: 3px;
+	background-size: 200% 200%;
+	width: 50%;
+	top: 0px;
+	display: inline-block;
+	animation-direction: forwards;
+	animation: GradientLeft -.66s 3s ease-in-out infinite;
+}
+#loadingRight{
+	background: linear-gradient(to left, #F7F7F7 50%, #026af3 50%);
+	height: 3px;
+	top: 0px;
+	background-size: 200% 200%;
+	width: 50%;
+	display: inline-block;
+	animation-direction: forwards;
+	animation: GradientRight -.66s 3s ease-in-out infinite;
+}
+@keyframes GradientLeft {
+	0% {
+		background-position: 0% 0%
+	}
+	50% {
+		background-position: 200% 200%
+	}
+	100% {
+		background-position: 200% 200%
+	}
+}
+@keyframes GradientRight {
+	0% {
+		background-position: 200% 200%
+	}
+	50% {
+		background-position: 0% 0%
+	}
+	100% {
+		background-position: 0% 0%
+	}
+}
 @keyframes Gradient {
 	0% {
 		background-position: 10% 50%

@@ -226,14 +226,14 @@ body{
 	border: 1px solid #026AF3;
 }
 .error{
-	border: 2px solid #BC371E;
+	border: 2px solid #cf290a;
 }
 .error:focus{
-	border: 2px solid #BC371E;
+	border: 2px solid #cf290a;
 }
 
 .errorFlag{
-	background: #BC371E;
+	background: #cf290a;
 	padding: 12px;
 	padding-left: 6px;
 	padding-right: 16px;
@@ -254,7 +254,7 @@ body{
 	top: 0px;
 	left: -18px;
 	 -webkit-clip-path: polygon(100% 0%, 0% 50%, 100% 100%);
-    background:#BC371E;
+    background:#cf290a;
 	width:20px;
 	height:100%;
 	max-height: 40px;
