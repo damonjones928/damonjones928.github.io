@@ -1,0 +1,74 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Index</title>
+<link href="../styles.css" rel="stylesheet" type="text/css">
+<link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
+<script src="../scripts.js"></script>
+</head>
+
+<body>
+	<div onMouseOver="showGuideBtn()" onMouseOut="hideGuideBtn()" id="topNav">
+		<div id="topBar"></div>
+		<button onClick="showMenu()" id="menuBtn"><img src="../images/menu_icon.svg" alt=""/></button>
+		<div id="headerBlock"><H1>Dashboard Name</H1><button onClick="menuToggle()" id="dotMenuBtn"><i class="demo-icon">&#xe81a</i></button>
+		<button id="reportBtn">Schedule a Report</button>
+		<button id="pdfGuidesBtn">Show PDF Guides</button>
+		</div>
+	</div>
+	<div class="expandedPanel" id="filtersPanel">
+		<button id="showFiltersBtnSmall" onClick="filtersToggle()" >DASHBOARD CRITERIA </button>
+		<button id="hideFiltersBtn" onClick="filtersToggle()" >DASHBOARD CRITERIA </button>
+		<div id="filters">
+			<div onClick="heightToggle1()" class="filterShort" id="filter1">
+				<button id="expandBtn1" class="expandBtn">+</button>
+				<span class="dashbLabel">ENTITIES</span>
+				<span class="dashTitle">All Entities</span>
+			</div>
+			<div onClick="heightToggle2()" class="filterShort" id="filter2">
+				<button id="expandBtn2" class="expandBtn">+</button>
+				<span class="dashbLabel">AS OF</span>
+				<span class="dashTitle">Prior Day (10/11/2018)</span>
+			</div>
+			<div onClick="heightToggle3()" class="filterShort" id="filter3">
+				<button id="expandBtn3" class="expandBtn">+</button>
+				<span class="dashbLabel">CURRENCY</span>
+				<span class="dashTitle">USD</span>
+			</div>
+			<div onClick="heightToggle4()" class="filterShort" id="filter4">
+				<button id="expandBtn4" class="expandBtn">+</button>
+				<span class="dashbLabel">ACCOUNTING</span>
+				<span class="dashTitle">Net</span>
+			</div>
+			<div onClick="heightToggle5()" class="filterShort" id="filter5">
+				<button id="expandBtn5" class="expandBtn">+</button>
+				<span class="dashbLabel">PERFORMANCE TIMEFRAME</span>
+				<span class="dashTitle">3 Month</span>
+			</div>
+			
+		</div>
+	</div>
+	<div class="collapsedNav" id="navPanel">
+		<div id="menuTop">	
+			<button onClick="hideMenu()" id="closeMenuBtn"><i class="demo-icon">&#xe810;</i></button>
+			<input id=menuSearch placeholder="Search Dashboards" type="text"></input>
+		</div>
+		<button id="dashBtn1" class="dashboardBtn">Dashboard 1</button>
+		<button id="dashBtn2" class="dashboardBtn">Dashboard 2</button>
+		<button id="dashBtn3" class="dashboardBtn">Dashboard 3</button>
+		<button id="dashBtn4" class="dashboardBtn">Dashboard 4</button>
+		<button id="dashBtn5" class="dashboardBtn">Dashboard 5</button>
+		<button id="dashBtnSD" class="dashboardBtn firstDashboard boldDashboards">Saved Dashboards</button>
+		<button id="dashBtnPO" class="dashboardBtn boldDashboards">Portfolio</button>
+		<button id="dashBtnPE" class="dashboardBtn boldDashboards">Performance</button>
+		<button id="dashBtnRI" class="dashboardBtn boldDashboards">Risk</button>
+		<button id="dashBtnCN" class="dashboardBtn createCustom">+ Create Custom</button>
+	</div>
+	<button id="showFiltersBtn" onClick="showFilters()" >DASHBOARD CRITERIA </button>
+	<div onMouseLeave="hideDropdown()" id="menuDropdown">
+		<button class="dashboardBtn">Configure Dashboard</button>
+		<button class="dashboardBtn">Save as a Copy</button>
+	</div>
+</body>
+</html>
