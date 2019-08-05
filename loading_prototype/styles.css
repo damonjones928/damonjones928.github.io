@@ -7,7 +7,7 @@ html
 body{
 	margin: 0px;
 	height: 100%;
-	background-color: #F7F7F7;
+	background-color: #F9F9F9;
 }
 .stat{
 	font-family: Roboto;
@@ -121,7 +121,7 @@ p{
 	max-width: 240px;
 }
 .loading{
-	background: linear-gradient(-45deg, #EEEEEE, White, #EEEEEE, White, #EEEEEE, White, #EEEEEE, White, #EEEEEE, White, #EEEEEE, White, #EEEEEE, White, #EEEEEE, White, #EEEEEE, White, #EEEEEE, White, #EEEEEE, White, #EEEEEE, White, #EEEEEE, White, #EEEEEE, White, #EEEEEE, White, #EEEEEE, White, #EEEEEE, White, #EEEEEE, White, #EEEEEE, White, #EEEEEE, White, #EEEEEE);
+	background: linear-gradient(-45deg, #EEEEEE, #F9F9F9, #EEEEEE, #F9F9F9, #EEEEEE, #F9F9F9, #EEEEEE, #F9F9F9, #EEEEEE, #F9F9F9, #EEEEEE, #F9F9F9, #EEEEEE, #F9F9F9, #EEEEEE, #F9F9F9, #EEEEEE, #F9F9F9, #EEEEEE, #F9F9F9, #EEEEEE, #F9F9F9, #EEEEEE, #F9F9F9, #EEEEEE, #F9F9F9, #EEEEEE, #F9F9F9, #EEEEEE, #F9F9F9, #EEEEEE, #F9F9F9, #EEEEEE, #F9F9F9, #EEEEEE, #F9F9F9, #EEEEEE, #F9F9F9, #EEEEEE, #F9F9F9, #EEEEEE);
 	background-size: 2000% 2000%;
 	animation: Gradient 30s linear infinite;
 }
@@ -136,7 +136,7 @@ p{
 	animation: Gradient 30s linear infinite;
 }
 #loadingLeft{
-	background: linear-gradient(to right, #026af3 50%, #F7F7F7 50%);
+	background: linear-gradient(to right, #026af3 50%, #F9F9F9 50%);
 	height: 3px;
 	background-size: 200% 200%;
 	width: 50%;
@@ -146,7 +146,7 @@ p{
 	animation: GradientLeft -.66s 3s ease-in-out infinite;
 }
 #loadingRight{
-	background: linear-gradient(to left, #F7F7F7 50%, #026af3 50%);
+	background: linear-gradient(to left, #F9F9F9 50%, #026af3 50%);
 	height: 3px;
 	top: 0px;
 	background-size: 200% 200%;

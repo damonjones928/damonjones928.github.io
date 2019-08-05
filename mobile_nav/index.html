@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  margin: 0;
+  background-color: #F7F7F7;
+  background-image: url(images/bg_middle.png);
+	background-size: calc(100% - 407px) 2903px;
+	background-position: 339px 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+#navbar {
+  background-color: #F7F7F7;
+  background-image: url(images/nav_middle.png);
+  background-repeat: repeat-x;
+  position: fixed;
+  top: 0;
+  height: 225px;
+  width: 100%;
+  display: block;
+  transition: top .5s;
+}
+	.shadow {
+		
+  box-shadow: 0px 3px 15px 0px rgba(0,0,0,0.2);
+	}
+	.noShadow{
+		
+  box-shadow: 0px 3px 15px 0px rgba(0,0,0,0);
+	}
+
+#navbar a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 15px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+#navbar a:hover {
+  background-color: #ddd;
+  color: black;
+}
+</style>
+</head>
+<body>
+
+<div id="navbar">
+  <img src="images/nav_left.png" width="330" height="224" alt=""/>
+  <img src="images/nav_right.png" width="52" height="224" style="float: right" alt=""/>
+</div>
+
+<div>
+  <img src="images/bg_left.png" width="339" height="2903" alt=""/>
+  <img src="images/bg_right.png" width="68" height="2903" style="float: right" alt=""/>
+
+<script>
+var prevScrollpos = window.pageYOffset;
+window.onscroll = function() {
+var currentScrollPos = window.pageYOffset;
+  if (prevScrollpos > currentScrollPos) {
+    document.getElementById("navbar").style.top = "0";
+  } else {
+    document.getElementById("navbar").style.top = "-225px";
+  }
+  prevScrollpos = currentScrollPos;
+	if (document.body.scrollTop > 1 || document.documentElement.scrollTop > 1) {
+    document.getElementById("navbar").style.boxShadow = "0px 3px 15px 0px rgba(0,0,0,0.2)";
+  } else {
+    document.getElementById("navbar").style.boxShadow = "0px 0px 0px 0px rgba(0,0,0,0.0)";
+  }
+};
+
+</script>
+
+</body>
+</html>
